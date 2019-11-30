@@ -148,4 +148,12 @@ CRISPY_TEMPLATE_PACK = "bootstrap4"
 SITE_ID = 1
 #django-allauth
 ACCOUNT_EMAIL_VERIFICATION = "none"
-ACCOUT_EMAIL_REQUIRED = (True)
+ACCOUNT_EMAIL_REQUIRED = (True)
+
+# Django Rest Framework
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+         'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    )
+}
