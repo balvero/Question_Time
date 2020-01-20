@@ -69,3 +69,5 @@ fabric.properties
 
 #sqlite
 *.sqlite3
+
+*__pycache__/
